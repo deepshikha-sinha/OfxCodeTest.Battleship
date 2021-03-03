@@ -10,7 +10,7 @@ namespace OfxCodeTest.Battleship.Controller
     /// <summary>
     /// A single player Battleship Game
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("")]
     [ApiController]
     public class GameController : ControllerBase
     {
@@ -55,7 +55,7 @@ namespace OfxCodeTest.Battleship.Controller
         /// <param name="shipStartRow">Start Row Position of the ship on the board - Must be between 1 and 10</param>
         /// <param name="shipStartColumn">Start Column Position the ship on the board - Must be between 1 and 10</param>
         /// <returns>Instance of the Ship if Valid, Bad Request If Invalid</returns>
-        [HttpPut("ship/place")]
+        [HttpPost("ship/place")]
         [ProducesResponseType(typeof(Ship), 200)]
         [ProducesResponseType(typeof(ObjectResult), 500)]
         [ProducesResponseType(typeof(BadRequestObjectResult), 400)]
@@ -94,7 +94,7 @@ namespace OfxCodeTest.Battleship.Controller
         /// <param name="shotColumn">Column Coordinate to attack on the board - Must be between 1 and 10</param>
         /// <returns>Attack Status - HIT, MISS, ALREADYHIT, HITANDSUNK</returns>
 
-        [HttpPut("attack")]
+        [HttpPost("attack")]
         [ProducesResponseType(typeof(ShotType), 200)]
         [ProducesResponseType(typeof(ObjectResult), 500)]
         [ProducesResponseType(typeof(BadRequestObjectResult), 400)]
