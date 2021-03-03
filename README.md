@@ -22,15 +22,17 @@ The application consists of the following projects:
     * This project has unit tests for all the acceptance criteria
 
 ### Dependancy Injection
+
 ```
 All the services are injected as a Singleton, as it was advised that no persistance layer is needed.
 As it was a single player game, Singleton instance does the job
 A better approach would have been in memory Persistance using EF Core
-
+```
 ## Clone this project
 
 ```
 git clone https://github.com/deepshikha-sinha/OfxCodeTest.Battleship.git
+```
 
 ## Running the Application
 The application was written in .NET 5, so please ensure you have .NET 5 installed. If you don't, you can download it from https://dotnet.microsoft.com/download/dotnet/5.0
