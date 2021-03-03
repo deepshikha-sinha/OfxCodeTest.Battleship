@@ -6,7 +6,7 @@ The task is to implement a Battleship state tracking API for a single player tha
 
 - Create a board
 - Add a battleship to the board
-- Take an ìattackî at a given position, and report back whether the attack resulted in a hit or a miss.
+- Take an ‚Äúattack‚Äù at a given position, and report back whether the attack resulted in a hit or a miss.
 
 The API should not support the entire game, just the state tracker. No graphical interface or persistence layer is required.
 
@@ -22,15 +22,17 @@ The application consists of the following projects:
     * This project has unit tests for all the acceptance criteria
 
 ### Dependancy Injection
+
 ```
 All the services are injected as a Singleton, as it was advised that no persistance layer is needed.
 As it was a single player game, Singleton instance does the job
 A better approach would have been in memory Persistance using EF Core
-
+```
 ## Clone this project
 
 ```
 git clone https://github.com/deepshikha-sinha/OfxCodeTest.Battleship.git
+```
 
 ## Running the Application
 The application was written in .NET 5, so please ensure you have .NET 5 installed. If you don't, you can download it from https://dotnet.microsoft.com/download/dotnet/5.0
@@ -52,9 +54,3 @@ Swagger Api Doc should open locally at for local testing https://localhost:44355
 
 ### From Visual Studio
 * To run the unit tests from Visual Studio, simply right-click the Unit Test project (OfxCodeTest.Battleship.Tests) and select Run Unit Tests.
-
-
-
-
-
-
