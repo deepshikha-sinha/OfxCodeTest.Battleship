@@ -22,6 +22,7 @@ The application consists of the following projects:
     * This project has unit tests for all the acceptance criteria
 
 ### Dependancy Injection
+```
 All the services are injected as a Singleton, as it was advised that no persistance layer is needed.
 As it was a single player game, Singleton instance does the job
 A better approach would have been in memory Persistance using EF Core
@@ -29,11 +30,31 @@ A better approach would have been in memory Persistance using EF Core
 ## Clone this project
 
 ```
-git clone 
+git clone https://github.com/deepshikha-sinha/OfxCodeTest.Battleship.git
 
 ## Running the Application
 The application was written in .NET 5, so please ensure you have .NET 5 installed. If you don't, you can download it from https://dotnet.microsoft.com/download/dotnet/5.0
 
+### Execution
 **Visual Studio 2019**
-If you are using Visual Studio 2017 on a Microsoft environment , open the solution file in the source directory, (BattleshipGame.sln) and run the build. The nuget packages (NUnit, Newtonsoft) should auto restore.
+If you are using Visual Studio 2019 , open the solution file in the source directory, (OfxCodeTest.Battleship.sln) and run the build. The nuget packages should auto restore.
+- Open Visual Studio -> Set OfxCodeTest.Battleship as startup project -> Debug -> Start Without Debugging
+Swagger Api Doc should open locally at for local testing https://localhost:44355/swagger/index.html
+
+
+## Run the Tests
+### From the command prompt
+
+* Navigate to the OfxCodeTest.Battleship folder
+* Type ```dotnet restore``
+* Type ```dotnet build```
+* Type ```dotnet test``` to run the unit tests.
+
+### From Visual Studio
+* To run the unit tests from Visual Studio, simply right-click the Unit Test project (OfxCodeTest.Battleship.Tests) and select Run Unit Tests.
+
+
+
+
+
 
